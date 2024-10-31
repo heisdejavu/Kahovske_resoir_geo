@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Геопортал самозаліснення</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="image_fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="image_fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Самозаліснення Каховського Водосховища</h1>
+                <nav>
+                    <a class="active" href="index.html">Головна сторінка</a>
+                    <a href="arcgis.html">Карта самозаліснення ArcGIS</a>
+                    <a href="sepal.html">Візуалізація даних самозаліснення Sepal.io</a>
+                    <a href="gee.html">Застосунки GEE</a>
+                    <a href="about.html">Про проект</a>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="hero-section">
+            <img src="images/sat_bg1.jpg" alt="Background Image" class="background-image">
+            <div class="text-overlay">
+                <h1>Геопортал самозаліснених ділянок з використанням ГІС технологій</h1>
+                <p>Виконав: студент 462м групи, </p>
+                <p-name>Сич Роман Сергійович</p-name>
+                <p>Науковий керівник: канд. техн. наук, доцент на кафедрі 407, </p>
+                <p-name>Горелик Станіслав Ігорович</p-name>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <div class = "content">
+                <h2>Знайомтесь з Геопорталом самозаліснення території Каховського водосховища</h2>
+                <p>Геопортал самозаліснення території Каховського водосховища - це інструмент, який дозволяє користувачам аналізувати та візуалізувати дані про ділянки самозаліснення та рівень води.</p>
+            </div>
+            <a href="about.html" target="_blank">
+                <button class="learn-more">Дізнатися більше</button>
+            </a>
+        </div>
+
+        
+        
+
+        <!-- MAPS -->
+        <div class = " maps">
+
+            <div class = "centered-text"> 
+                <h2>Карти самозаліснення</h2>
+            </div>
+
+            
+            <div class="side-text-arcgis">ArcGIS</div>
+            <div class = "image-container-arcgis">
+                <a href="#" target="_blank"> 
+                    <img src = "images/arcgis.jpg" alt="ArcGIS" class="background-image">
+                    <div class = "text-overlay-maps">
+                        <h3>Карта самозаліснення ArcGIS</h3>
+                    </div>
+                </a>
+                <a href="arcgis.html" target="_blank">
+                    <button class="learn-more-map">Дізнатися більше</button>
+                </a>
+            </div>
+            
+            
+            <div class = "image-container">
+                <div class="side-text-sepal">Sepal</div>
+                <div class = "image-container-sepal-raster">
+                    <a href="qgis2web_raster/index.html" target="_blank">  
+                        <img src = "images/sepal_raster.jpg" alt="Sepal.io" class="background-image">
+                        <div class = "text-overlay-maps">
+                            <h3>Растрова візуалізація самозаліснення даних Sepal.io</h3>
+                        </div>
+                    </a>
+                    <a href="sepal.html" target="_blank">
+                        <button class="learn-more-map">Дізнатися більше</button>
+                    </a>
+                </div>
+
+                <div class = "image-container-sepal-vector">
+                    <a href="qgis2web_vector/index.html" target="_blank">
+                        <img src = "images/sepal_vector.jpg" alt="Sepal.io" class="background-image">
+                        <div class = "text-overlay-maps">
+                            <h3>Векторна візуалізація самозаліснення даних Sepal.io</h3>
+                        </div>
+                    </a>
+                    <a href="sepal.html" target="_blank">
+                        <button class="learn-more-map">Дізнатися більше</button>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class = "image-container">
+                <div class="side-text-gee">GEE</div>
+                <div class = "image-container-gee-ndvi">
+                    <a href="https://single-being-381900.projects.earthengine.app/view/kahovske-resoir" target="_blank">
+                        <img src = "images/gee_ndvi.jpg" alt="GEE" class="background-image">
+                        <div class = "text-overlay-maps">
+                            <h3>Візуалізація самозаліснення даних GEE</h3>
+                        </div>
+                    </a>
+                    <a href="gee.html" target="_blank">
+                        <button class="learn-more-map">Дізнатися більше</button>
+                    </a>
+                </div>
+
+                <div class = "image-container-gee-ndwi">
+                    <a href="https://single-being-381900.projects.earthengine.app/view/kahovske-water-ndwi" target="_blank">  
+                        <img src = "images/gee_ndwi.jpg" alt="GEE" class="background-image">
+                        <div class = "text-overlay-maps">
+                            <h3>Візуалізація растру NDWI даних GEE</h3>
+                        </div>
+                    </a>
+                    <a href="gee.html" target="_blank">
+                        <button class="learn-more-map">Дізнатися більше</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна сторінка</a></li>
+                        <li><a href="arcgis.html">Карта самозаліснення ArcGIS</a></li>
+                        <li><a href="sepal.html">Візуалізація самозаліснення даних Sepal.io</a></li>
+                        <li><a href="gee.html">Застосунки GEE</a></li>
+                        <li><a href="about.html">Про проект</a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">Карта самозаліснення </a></li>
+                        <li><a href="qgis2web_vector/index.html" target="_blank">Карта вектор</a></li>
+                        <li><a href="qgis2web_raster/index.html" target="_blank">Карта растр</a></li>
+                        <li><a href="https://single-being-381900.projects.earthengine.app/view/kahovske-water-ndwi" target="_blank">Карта NDWI </a></li>
+                        <li><a href="https://single-being-381900.projects.earthengine.app/view/kahovske-resoir" target="_blank">Карта NDVI </a></li>                       
+                    </ul>
+                </nav>
+
+                
+                <p>Національний аерокосмічний університет імені М. Є. Жуковського «Харківський авіаційний інститут»</p>
+                <p>© 2024</p>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Карта самозаліснення ArcGIS</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="image_fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="image_fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Самозаліснення Каховського Водосховища</h1>
+                <nav>
+                    <a href="index.html">Головна сторінка</a>
+                    <a class="active" href="arcgis.html">Карта самозаліснення ArcGIS</a>
+                    <a href="sepal.html">Візуалізація самозаліснення даних Sepal.io</a>
+                    <a href="gee.html">Застосунки GEE</a>
+                    <a href="about.html">Про проект</a>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="hero-section-app">
+            <img src="images/sat_bg1.jpg" alt="Background Image" class="background-image">
+            <div class="text-overlay">
+                <h1>Додаток самозаліснених ділянок з використанням ГІС технологій</h1>
+                <p>Виконано з використання програмного забезпечення ArcGIS Online </p>
+            </div>
+        </div>
+
+
+        <div class = "maps">
+            <div class = "created-app-name">
+                <h2>Створені Застосунки</h2>
+            </div>
+
+            <div class = "gif-container">
+                <a href="#" target="_blank">              
+                    <img src="gif/agis.gif" alt="ArcGIS" class="gif-bg">
+                </a>
+            </div>
+
+            <div class = "click-above">
+                <p>(Натисніть на зображення для перегляду карти)</p>
+            </div>
+
+            <div class = "map-description">
+                <p>Карта самозаліснення Каховського водосховища створена за допомогою ArcGIS Online. На карті відображені ділянки самозаліснення, а також рівень води на водосховищі.</p>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="footer-container">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна сторінка</a></li>
+                        <li><a href="arcgis.html">Карта самозаліснення ArcGIS</a></li>
+                        <li><a href="sepal.html">Візуалізація самозаліснення даних Sepal.io</a></li>
+                        <li><a href="gee.html">Застосунки GEE</a></li>
+                        <li><a href="about.html">Про проект</a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">Карта самозаліснення </a></li>
+                        <li><a href="qgis2web_vector/index.html" target="_blank">Карта вектор</a></li>
+                        <li><a href="qgis2web_raster/index.html" target="_blank">Карта растр</a></li>
+                        <li><a href="https://single-being-381900.projects.earthengine.app/view/kahovske-water-ndwi" target="_blank">Карта NDWI </a></li>
+                        <li><a href="https://single-being-381900.projects.earthengine.app/view/kahovske-resoir" target="_blank">Карта NDVI </a></li>                       
+                    </ul>
+                </nav>
+
+                
+                <p>Національний аерокосмічний університет імені М. Є. Жуковського «Харківський авіаційний інститут»</p>
+                <p>© 2024</p>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

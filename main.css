@@ -1,0 +1,694 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Загальні стилі для header */
+header {
+    background-color: #004d40; /* колір фону */
+    padding: 15px 20px;
+}
+
+/* Flexbox контейнер для вирівнювання заголовка та навігації */
+.header-container {
+    display: flex;
+    align-items: center; /* вирівнювання по вертикалі */
+    gap: 30px; /* відступ між заголовком та навігацією */
+}
+
+/* Стиль заголовка */
+.header-container h1 {
+    font-size: 1.5em;
+    color: white;
+    margin: 0;
+}
+
+/* Стиль для навігаційного меню */
+.header-container nav {
+    display: flex;   
+    gap: 0px; /* відступи між пунктами меню */
+    margin-left: auto ;
+    text-align: center;
+}
+
+/* Стиль для посилань у меню */
+.header-container nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 9px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* Виділення активного пункту меню */
+.header-container nav a.active {
+    background-color: #00796b;
+    border-radius: 5px;
+}
+
+/* Стиль при наведенні курсору */
+.header-container nav a:hover {
+    background-color: #00695c;
+    border-radius: 5px;
+}
+
+
+/* Основний контейнер для зображення і тексту */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 500px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+}
+
+.hero-section img{
+    transition: transform 3.5s ease;
+}
+.hero-section img:hover{
+    transform: scale(1.2);
+}
+
+/* Зображення на фоні */
+.background-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* масштабує зображення, зберігаючи співвідношення сторін */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Текст поверх зображення */
+.text-overlay {
+    position: relative;
+    top: 20%; /*pos 50% відносно батьківського контейнера*/
+    /* left: 50%; */
+    z-index: 2;
+    color: white;
+    text-align: left;
+    max-width: 600px; /* максимальна ширина текстового блоку */
+    padding: 20px;
+    margin: 0 20px;
+}
+
+/* Стилі для заголовка та тексту */
+.text-overlay h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    
+}
+
+.text-overlay p-name{
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Основний блок */
+.info-section {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    position: relative; 
+    opacity: 0.4;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+    visibility: hidden; 
+}
+
+ .info-section.show {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+    z-index: 99;
+}
+
+.info-section .content{
+    max-width: 800px; /* Max width for the text */
+    margin: 0 auto; /* Center the text */
+    text-align: center; /* Center-align the text */
+}
+
+.info-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-section p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+/* Кнопка Learn More */
+.learn-more {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #666;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.learn-more:hover {
+    background-color: #666;
+    color: white;
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+
+.learn-more-map {
+    position: absolute; /* Абсолютне позиціонування */
+    top: 10px; /* Відступ від верхнього краю */
+    right: 10px; /* Відступ від правого краю */
+    padding: 8px 12px; /* Відступи всередині кнопки */
+    background-color: #007bff; /* Колір фону кнопки */
+    color: white; /* Колір тексту */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закруглені кути */
+    font-size: 14px; /* Розмір шрифту */
+    cursor: pointer; /* Зміна курсору на руку при наведенні */
+    transition: background-color 0.3s; /* Плавний перехід кольору */
+    z-index: 10; /* Шар над іншими елементами */
+}
+.learn-more-map:hover {
+    background-color: #666;
+    color: white;
+}
+
+
+.maps{
+    background: #f9f9f9;
+}
+
+.image-container-arcgis{
+    position: relative;
+    width: 60.1%;
+    height: 200px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+
+.image-container-arcgis img{
+    transition: transform 0.3s ease;
+}
+.image-container-arcgis img:hover{
+    transform: scale(1.1);
+}
+
+
+.text-overlay-maps {
+    position: relative;
+    top: 65%; /*pos 50% відносно батьківського контейнера*/
+    /* left: 50%; */
+    z-index: 2;
+    color: white;
+    text-align: left;
+    max-width: auto; /* максимальна ширина текстового блоку */
+    padding: 20px;
+    margin: 0 0px;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Вирівнювання по верхньому краю */
+    margin: 5px 0 0 0; /* Відступи зверху та знизу */
+}
+
+.image-container img{
+    transition: transform 0.3s ease;
+}
+.image-container img:hover{
+    transform: scale(1.1);
+}
+
+.image-container-sepal-raster{
+    position: relative;
+    width: 30%;
+    height: 200px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 19.9%;
+}
+
+.image-container-sepal-vector{
+    position: relative;
+    width: 30%;
+    height: 200px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    /* margin-left: -50%; */
+}
+
+.image-container-gee-ndvi{
+    position: relative;
+    width: 30%;
+    height: 200px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-left: 19.9%;
+}
+
+.image-container-gee-ndwi{
+    position: relative;
+    width: 30%;
+    height: 200px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+
+.side-text-arcgis{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 24px;
+    font-weight: bold;
+    /* color: black; */
+    color: #666;
+    position: absolute;
+    top: 1080px;
+    left: 200px;
+    margin: 20px;
+    text-align: center;
+    z-index: 99;
+    font-size: 3em;
+}
+
+.side-text-sepal{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    position: absolute;
+    top: 1320px;
+    left: 1090px;
+    margin: 20px;
+    text-align: center;
+    z-index: 99;
+    font-size: 3em;
+}
+
+.side-text-gee{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    position: absolute;
+    top: 1540px;
+    left: 200px;
+    margin: 20px;
+    text-align: center;
+    z-index: 99;
+    font-size: 3em;
+}
+
+.footer-container {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container nav {
+    list-style: none;
+    gap: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer-container nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to arrange list items horizontally */
+}
+
+.footer-container nav ul li {
+    margin: 0 10px; /* Add horizontal spacing between items */
+}
+
+.footer-container  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 9px;
+    font-weight: 600;
+    font-size: 1.0em;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Стиль при наведенні курсору */
+.footer-container a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.footer-container p {
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+/* Для сторінки додатків: */
+
+.hero-section-app {
+    position: relative;
+    width: 100%;
+    height: 400px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+}
+
+.hero-section-app img{
+    transition: transform 3.5s ease;
+}
+.hero-section-app img:hover{
+    transform: scale(1.2);
+}
+
+.created-app-name{
+    margin: 5px;
+    margin-left: 333px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: #666;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 0 0; /* Відступи зверху та знизу */
+    /* height: 650px;  */
+}
+
+.gif-bg{
+    position: relative;
+    width: 100%;
+    height: 400px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+
+    margin: 0 auto;
+    object-fit: cover;
+    
+}
+
+.gif-container img{
+    transition: transform 0.3s ease;
+    
+}
+
+.gif-container img:hover{
+    transform: scale(1.01);
+}
+
+.click-above{
+    margin: 5px;
+    text-align: center;
+    font-size: 0.6;
+    color: #666;
+}
+
+
+.map-description{
+    margin: 5px;
+    left: 10%;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    font-size: 1.2em;
+    
+}
+
+
+.created-app-name-duo{
+    margin: 5px;
+    margin-left: 67px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: #666;
+}
+
+.gif-container-duo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 0 0; 
+    /* height: 650px;  */
+}
+
+.gif-bg-duo {
+    position: relative;
+    width: 90%;
+    height: 400px; 
+    overflow: hidden;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.gif-container-duo img{
+    transition: transform 0.3s ease;
+}
+
+.gif-container-duo img:hover{
+    transform: scale(1.01);
+}
+
+
+.image-one-duo{
+    position: relative;
+    width: 70%;
+    height: 400px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+
+.image-two-duo{
+    position: relative;
+    width: 70%;
+    height: 400px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    /* margin-left: -50%; */
+}
+
+.text-overlay-maps-one {
+    position: absolute;
+    top: 85%; /*pos 50% відносно батьківського контейнера*/
+    min-width: 590px;
+    /* left: 50%; */
+    z-index: 2;
+    color: white;
+    text-align: left;
+    max-width: auto; /* максимальна ширина текстового блоку */
+    padding: 20px;
+    margin: 0 0px;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    z-index: 99;
+}
+
+.text-overlay-maps-two {
+    position: absolute;
+    top: 85%; /*pos 50% відносно батьківського контейнера*/ 
+    min-width: 590px;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    max-width: auto; /* максимальна ширина текстового блоку */
+    padding: 20px;
+    margin: 0 0px;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    z-index: 99;
+}
+
+.image-one-duo:hover .text-overlay-maps-one{
+    opacity: 1;
+}
+.image-two-duo:hover .text-overlay-maps-two{
+    opacity: 1;
+}
+
+/* Для сторінки про проект: */
+/* Стиль для інформаційних блоків */
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.meta-info, .author-info {
+    width: 45%;
+}
+
+.meta-info h3, .image-gallery h3 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.author-info p{
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.meta-info p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.author-info p-name{
+    font-size: 1.2em;
+    margin-top: 2px;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+
+.image-header{
+    margin: 5px;
+    
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+}
+/* Галерея зображень */
+*{
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
