@@ -692,3 +692,20 @@ header {
 .demo:hover {
   opacity: 1;
 }
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
