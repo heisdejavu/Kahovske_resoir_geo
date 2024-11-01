@@ -15,15 +15,12 @@ def area_per_class_change():
     df_change['DN'] = df_change['DN'].replace(name)
     area_change = df_change.groupby('DN')['area_ha'].sum().round(2)
 
-    # Визначаємо площу класу 'non-def'
     non_def_area_change = area_change.get('non-def', 0)
 
-    # Віднімаємо площу класу 'non-def' від total_area_change
     total_area_change = area_change.sum() - non_def_area_change
     percent_change = (area_change / total_area_change * 100).round(2)
 
 
-    # Формуємо таблицю
     df_result_change = pd.DataFrame({
         'Class Change': area_change.index,
         'Area Change (ha)': area_change.values,
