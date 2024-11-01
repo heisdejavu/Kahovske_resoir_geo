@@ -465,6 +465,27 @@ header {
     transform: scale(1.01);
 }
 
+.text-overlay-maps-arcgis {
+    position: absolute;
+    top: 125%; /*pos 50% відносно батьківського контейнера*/
+    min-width: 710px;
+    /* left: 50%; */
+    z-index: 2;
+    color: white;
+    text-align: left;
+    max-width: auto; /* максимальна ширина текстового блоку */
+    padding: 20px;
+    margin: 0 0px;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    z-index: 99;
+}
+
+.gif-container:hover .text-overlay-maps-arcgis{
+    opacity: 1;
+}
+
 .click-above{
     margin: 5px;
     text-align: center;
@@ -774,17 +795,41 @@ th {
     font-weight: bold;
 }
 
-.gee-image-container{
-    position: relative;
-    width: 70%;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    overflow: hidden;
+
+.gee-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin: 5px 0 0 0; 
+    /* height: 650px;  */
 }
 
-.gee-image-container img{
-    width: 40%;
-    height: 400px;
+.gee-bg {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.image-one-gee{
+    position: relative;
+    width: 100%;
+    height: 500px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 5px;
     margin-left: 50px;
+    
+}
+
+.image-two-gee{
+    position: relative;
+    width: 100%;
+    height: 500px; /* або налаштуйте висоту за потреби */
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 50px;
+    /* margin-left: -50%; */
 }
