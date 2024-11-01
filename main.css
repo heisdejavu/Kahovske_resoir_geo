@@ -227,7 +227,8 @@ header {
 
 .text-overlay-maps {
     position: relative;
-    top: 65%; /*pos 50% відносно батьківського контейнера*/
+    top: 140px; 
+    /* bottom: 70px; */
     /* left: 50%; */
     z-index: 2;
     color: white;
@@ -237,6 +238,7 @@ header {
     margin: 0 0px;
     font-size: 0.9em;
     background: rgba(0, 0, 0, 0.2);
+    z-index: 99;
 }
 
 .image-container {
@@ -371,20 +373,19 @@ header {
 }
 
 .footer-container nav {
-    list-style: none;
-    gap: 30px;
-
     display: flex;
+    list-style: none;
+    gap: 0px;
     justify-content: center;
     align-items: center;
     margin: 20px;
 }
 
 .footer-container nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Use flexbox to arrange list items horizontally */
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
 }
 
 .footer-container nav ul li {
@@ -398,6 +399,7 @@ header {
     font-weight: 600;
     font-size: 1.0em;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 
@@ -405,10 +407,11 @@ header {
 .footer-container a:hover {
     background-color: #666;
     border-radius: 5px;
+    
 }
 
 .footer-container p {
-    margin: 5px;
+    margin: 3px;
     font-size: 0.9em;
 }
 
@@ -466,8 +469,8 @@ header {
 }
 
 .text-overlay-maps-arcgis {
-    position: absolute;
-    top: 125%; /*pos 50% відносно батьківського контейнера*/
+    position: relative;
+    top: -70px; /*pos 50% відносно батьківського контейнера*/
     min-width: 710px;
     /* left: 50%; */
     z-index: 2;
@@ -621,6 +624,7 @@ header {
 
 .meta-info, .author-info {
     width: 45%;
+    background-color: #f9f9f9;
 }
 
 .meta-info h3, .image-gallery h3 {
@@ -642,11 +646,22 @@ header {
     margin-left: 20px;
 }
 
+
+
 .author-info p-name{
     font-size: 1.2em;
     margin-top: 2px;
     font-style: italic;
     margin-left: 10px;
+}
+
+.author-info a{
+    color: black;
+    text-decoration: none;
+}
+
+.author-info a:hover{
+    color: #666;
 }
 
 
@@ -666,7 +681,9 @@ header {
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: relative;
+    position: relative;  
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Hide the images by default */
@@ -832,4 +849,36 @@ th {
     margin-left: 5px;
     margin-right: 50px;
     /* margin-left: -50%; */
+}
+
+.interest-link{
+    margin: 5px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.interest-link h2{
+    margin: 5px;
+    margin-left: 20px;
+    
+    font-size: 1.8em;
+    
+}
+
+.interest-link a{
+    color: black;
+    text-decoration: none;
+}
+
+.interest-link a:hover{
+    color: #666;
+}
+
+.interest-link p{
+    margin: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+    text-align: justify;
+    font-size: 1.3em;
+    
 }
