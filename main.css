@@ -517,6 +517,7 @@ header {
     margin: 5px;
     font-size: 1.4em;
     text-align: center;
+    max-width: 1300px;
 }
 
 .created-app-name-duo{

@@ -1,6 +1,6 @@
 window.addEventListener('scroll', () => {
     const infoSection = document.querySelector('.info-section');
-    const triggerPoint = window.innerHeight * 0.65; // 75% of the window height
+    const triggerPoint = window.innerHeight * 0.50; // 75% of the window height
 
     if (infoSection) {
         if (window.scrollY > triggerPoint) {
@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll', () => {
   const infoSection = document.querySelector('.side-text-gee');
-  const triggerPoint = window.innerHeight * 1.0; // 75% of the window height
+  const triggerPoint = window.innerHeight * 1.25; // 75% of the window height
 
   if (infoSection) {
       if (window.scrollY > triggerPoint) {
