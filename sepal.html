@@ -17,9 +17,9 @@
                 <h1>Самозаліснення Каховського Водосховища</h1>
                 <nav>
                     <a href="index.html">Головна сторінка</a>
-                    <a href="arcgis.html">Карта самозаліснення ArcGIS</a>
-                    <a class="active" href="sepal.html">Візуалізація самозаліснення даних Sepal.io</a>
-                    <a href="gee.html">Застосунки GEE</a>
+                    <a href="arcgis.html">ArcGIS як Інструмент Візуалізації Самозаліснення</a>
+                    <a class="active" href="sepal.html">Sepal.io як Інструмент Візуалізації Місцевості</a>
+                    <a href="gee.html">Google Earth Engine Застосунки</a>
                     <a href="about.html">Про проект</a>
                 </nav>
             </div>
@@ -65,153 +65,151 @@
 
             <div class = "map-description">
                 <p>У рамках проєкту були виконані класифікація супутникових зображень за 2022 та 2024 роки з метою вивчення змін у природному покриві досліджуваної території. За допомогою інструментів платформи Sepal.io було створено класи змін, що дали змогу проаналізувати різницю між станом екосистеми до та після періоду заліснення. Отримані результати були векторизовані для більш точного аналізу та візуалізації, що дозволяє легко інтегрувати дані у GIS-системи та проводити детальніший аналіз змін.</p>
-                <h1>Результати занесені до таблиці.</h1>
+                <h1>Результати занесені до таблиць</h1>
             </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Class Change</th>
-                        <th>Площа самозаліснення (га)</th>
-                        <th>Відсоток зміни (%)</th>
+            <div class="table-container">
+                <div class = "table-1">
+                    <div class= "table-title">
+                        <h2>Таблиця результатів класифікації Класу Змін</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Класи</th>
+                                <th>Площа самозаліснення (га)</th>
+                                <th>Відсоток зміни (%)</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Лісові ділянки -> Лісові ділянки</td>
+                                <td>10506.59</td>
+                                <td>3.91</td>
+                            </tr>
+
+                            <tr>
+                                <td>Лісові ділянки -> Ділянки землі</td>
+                                <td>12499.05</td>
+                                <td>4.65</td>
+                            </tr>
+
+                            <tr>
+                                <td>Лісові ділянки -> Вода</td>
+                                <td>4118.96</td>
+                                <td>1.53</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ділянки землі -> Лісові ділянки</td>
+                                <td>13106.46</td>
+                                <td>4.87</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ділянки землі -> Ділянки землі</td>
+                                <td>12797.55</td>
+                                <td>4.76</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ділянки землі -> Вода</td>
+                                <td>672.86</td>
+                                <td>0.25</td>
+                            </tr>
+
+                            <tr>
+                                <td>Вода -> Лісові ділянки</td>
+                                <td>64150.79</td>
+                                <td>23.84</td>
+                            </tr>
+
+                            <tr>
+                                <td>Вода -> Ділянки землі</td>
+                                <td>100516.21</td>
+                                <td>37.36</td>
+                            </tr>
+
+                            <tr>
+                                <td>Вода -> Вода</td>
+                                <td>50668.07</td>
+                                <td>18.83</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class = "table-2">
+                    <div class= "table-title">
+                        <h2>Таблиця результатів класифікації 2024</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Класи</th>
+                                <th>Площа самозаліснення (га)</th>
+                                <th>Відсоток (%)</th>             
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Лісові ділянки</td>
+                                <td>87756.77</td>
+                                <td>32.62</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ділянки землі</td>
+                                <td>125819.64</td>
+                                <td>46.77</td>
+                            </tr>
+
+                            <tr>
+                                <td>Вода</td>
+                                <td>55462.32</td>
+                                <td>20.62</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class = "table-3">
+                    <div class= "table-title">
+                        <h2>Таблиця результатів класифікації 2022</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Класи</th>
+                                <th>Площа самозаліснення (га)</th>
+                                <th>Відсоток (%)</th>             
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Лісові ділянки</td>
+                                <td>27148.99</td>
+                                <td>10.09</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ділянки землі</td>
+                                <td>26560.12</td>
+                                <td>9.87</td>
+                            </tr>
+
+                            <tr>
+                                <td>Вода</td>
+                                <td>215372.46</td>
+                                <td>80.06</td>
+                            </tr>
                         
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>forest -> forest</td>
-                        <td>10506.59</td>
-                        <td>3.91</td>
-                    </tr>
-
-                    <tr>
-                        <td>forest -> land</td>
-                        <td>12499.05</td>
-                        <td>4.65</td>
-                    </tr>
-
-                    <tr>
-                        <td>forest -> water</td>
-                        <td>4118.96</td>
-                        <td>1.53</td>
-                    </tr>
-
-                    <tr>
-                        <td>land -> forest</td>
-                        <td>13106.46</td>
-                        <td>4.87</td>
-                    </tr>
-
-                    <tr>
-                        <td>land -> land</td>
-                        <td>12797.55</td>
-                        <td>4.76</td>
-                    </tr>
-
-                    <tr>
-                        <td>land -> water</td>
-                        <td>672.86</td>
-                        <td>0.25</td>
-                    </tr>
-
-                    <tr>
-                        <td>non-def</td>
-                        <td>3326222.84</td>
-                        <td>1236.35</td>
-                    </tr>
-
-                    <tr>
-                        <td>water -> forest</td>
-                        <td>64150.79</td>
-                        <td>23.84</td>
-                    </tr>
-
-                    <tr>
-                        <td>water -> land</td>
-                        <td>100516.21</td>
-                        <td>37.36</td>
-                    </tr>
-
-                    <tr>
-                        <td>water -> water</td>
-                        <td>50668.07</td>
-                        <td>18.83</td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Class </th>
-                        <th>Площа самозаліснення (га)</th>
-                        <th>Відсоток (%)</th>             
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>forest</td>
-                        <td>87756.77</td>
-                        <td>32.62</td>
-                    </tr>
-
-                    <tr>
-                        <td>land</td>
-                        <td>125819.64</td>
-                        <td>46.77</td>
-                    </tr>
-
-                    <tr>
-                        <td>non-def</td>
-                        <td>3326213.86</td>
-                        <td>1236.37</td>
-                    </tr>
-
-                    <tr>
-                        <td>water</td>
-                        <td>55462.32</td>
-                        <td>20.62</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Class </th>
-                        <th>Площа самозаліснення (га)</th>
-                        <th>Відсоток (%)</th>             
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>forest</td>
-                        <td>27148.99</td>
-                        <td>10.09</td>
-                    </tr>
-
-                    <tr>
-                        <td>land</td>
-                        <td>26560.12</td>
-                        <td>9.87</td>
-                    </tr>
-
-                    <tr>
-                        <td>non-def</td>
-                        <td>3326165.58</td>
-                        <td>1236.38</td>
-                    </tr>
-
-                    <tr>
-                        <td>water</td>
-                        <td>215372.46</td>
-                        <td>80.06</td>
-                    </tr>
-                   
-                </tbody>
-            </table>
-
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         
@@ -222,19 +220,19 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Головна сторінка</a></li>
-                        <li><a href="arcgis.html">Карта самозаліснення ArcGIS</a></li>
-                        <li><a href="sepal.html">Візуалізація самозаліснення даних Sepal.io</a></li>
-                        <li><a href="gee.html">Застосунки GEE</a></li>
+                        <li><a href="arcgis.html">ArcGIS як Інструмент Візуалізації Самозаліснення</a></li>
+                        <li><a href="sepal.html">Sepal.io як Інструмент Візуалізації Місцевості</a></li>
+                        <li><a href="gee.html">Google Earth Engine Застосунки</a></li>
                         <li><a href="about.html">Про проект</a></li>
                     </ul>
                 </nav>
 
                 <nav>
                     <ul>
-                        <li><a href="#" target="_blank">Карта самозаліснення </a></li>
+                        <li><a href="https://www.arcgis.com/apps/mapviewer/index.html?webmap=85d426041b65496381f916997df7a898" target="_blank">Карта самозаліснення </a></li>
                         <li><a href="qgis2web_vector/index.html" target="_blank">Карта вектор</a></li>
                         <li><a href="qgis2web_raster/index.html" target="_blank">Карта растр</a></li>
-                        <li><a href="https://single-being-381900.projects.earthengine.app/view/kahovske-water-ndwi" target="_blank">Карта NDWI </a></li>
+                        <li><a href="https://single-being-381900.projects.earthengine.app/view/kahovske-Вода-ndwi" target="_blank">Карта NDWI </a></li>
                         <li><a href="https://single-being-381900.projects.earthengine.app/view/kahovske-resoir" target="_blank">Карта NDVI </a></li>                       
                     </ul>
                 </nav>

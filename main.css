@@ -474,7 +474,7 @@ header {
 
 
 .map-description{
-    margin: 5px;
+    margin: 10px;
     
     margin-left: 100px;
     margin-top: 30px;
@@ -726,13 +726,41 @@ header {
   opacity: 1;
 }
 
-table {
-    width: 510px;
-    border-collapse: collapse;
+.table-container {
+    display: flex;
+    justify-content: space-between; /* Розташування таблиць з відступами між ними */
+    gap: 20px; /* Відступ між таблицями */
+    margin: 20px; /* Відступи навколо контейнера */
     margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+    margin-right: 100px;
+}
+
+.table-1{
+    width: 50%;
+}
+/* .table-1 th, .table-1 td{
+    width: 60%;
+} */
+
+.table-2{
+    width: 25%;
+}
+
+.table-3{
+    width: 25%;
+}
+
+.table-title{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
 }
 
 th, td {
@@ -744,4 +772,19 @@ th, td {
 th {
     background-color: #f2f2f2;
     font-weight: bold;
+}
+
+.gee-image-container{
+    position: relative;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.gee-image-container img{
+    width: 40%;
+    height: 400px;
+    margin-left: 50px;
 }
