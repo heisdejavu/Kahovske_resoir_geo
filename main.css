@@ -293,14 +293,15 @@ header {
 
 .side-text-arcgis{
     writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
+    /* transform: translateY(50px) rotate(180deg); */
     font-size: 24px;
     font-weight: bold;
     /* color: black; */
     color: #666;
     position: absolute;
     top: 1080px;
-    left: 200px;
+    left: 230px;
     margin: 20px;
     text-align: center;
     z-index: 99;
@@ -320,7 +321,7 @@ header {
     color: #666;
     position: absolute;
     top: 1320px;
-    left: 1090px;
+    left: 1200px;
     margin: 20px;
     text-align: center;
     z-index: 99;
@@ -340,7 +341,7 @@ header {
     color: #666;
     position: absolute;
     top: 1540px;
-    left: 200px;
+    left: 230px;
     margin: 20px;
     text-align: center;
     z-index: 99;
@@ -474,8 +475,8 @@ header {
 
 .map-description{
     margin: 5px;
-    left: 10%;
-    margin-left: 10%;
+    
+    margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 10px;
     margin-right: 40px;
@@ -483,6 +484,16 @@ header {
     
 }
 
+.map-description p{
+    text-align: justify;
+    max-width: 1300px;
+}
+
+.map-description h1{
+    margin: 5px;
+    font-size: 1.4em;
+    text-align: center;
+}
 
 .created-app-name-duo{
     margin: 5px;
@@ -716,9 +727,12 @@ header {
 }
 
 table {
-    width: 300px;
+    width: 510px;
     border-collapse: collapse;
-    margin-left: 40px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 th, td {
