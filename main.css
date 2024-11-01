@@ -305,6 +305,11 @@ header {
     text-align: center;
     z-index: 99;
     font-size: 3em;
+
+    opacity: 0.4;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+    visibility: hidden; 
 }
 
 .side-text-sepal{
@@ -320,6 +325,11 @@ header {
     text-align: center;
     z-index: 99;
     font-size: 3em;
+
+    opacity: 0.4;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+    visibility: hidden; 
 }
 
 .side-text-gee{
@@ -335,6 +345,18 @@ header {
     text-align: center;
     z-index: 99;
     font-size: 3em;
+
+    opacity: 0.4;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+    visibility: hidden; 
+}
+
+.side-text-arcgis.show, .side-text-gee.show, .side-text-sepal.show{
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+    z-index: 99;
 }
 
 .footer-container {
