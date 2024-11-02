@@ -474,6 +474,7 @@ header {
     color: white;
     text-align: left;
     max-width: auto; 
+    padding: 20px;
     margin: 0 0px;
     font-size: 0.9em;
     background: rgba(0, 0, 0, 0.2);
@@ -569,7 +570,7 @@ header {
 .text-overlay-maps-one {
     position: absolute;
     top: 85%; /*pos 50% відносно батьківського контейнера*/
-    min-width: 590px;
+    min-width: 630px;
     z-index: 2;
     color: white;
     text-align: left;
@@ -585,7 +586,7 @@ header {
 .text-overlay-maps-two {
     position: absolute;
     top: 85%; /*pos 50% відносно батьківського контейнера*/ 
-    min-width: 590px;
+    min-width: 630px;
     z-index: 2;
     color: white;
     text-align: left;

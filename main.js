@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll', () => {
   const infoSection = document.querySelector('.side-text-arcgis');
-  const triggerPoint = window.innerHeight * 0.85; // 75% of the window height
+  const triggerPoint = window.innerHeight * 0.75; // 75% of the window height
 
   if (infoSection) {
       if (window.scrollY > triggerPoint) {
@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll', () => {
   const infoSection = document.querySelector('.side-text-sepal');
-  const triggerPoint = window.innerHeight * 0.95; // 75% of the window height
+  const triggerPoint = window.innerHeight * 0.85; // 75% of the window height
 
   if (infoSection) {
       if (window.scrollY > triggerPoint) {
@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll', () => {
   const infoSection = document.querySelector('.side-text-gee');
-  const triggerPoint = window.innerHeight * 1.25; // 75% of the window height
+  const triggerPoint = window.innerHeight * 0.85; // 75% of the window height
 
   if (infoSection) {
       if (window.scrollY > triggerPoint) {
