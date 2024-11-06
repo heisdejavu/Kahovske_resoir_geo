@@ -210,11 +210,12 @@ header {
 .image-container-arcgis{
     position: relative;
     width: 60.1%;
-    height: 200px; /* або налаштуйте висоту за потреби */
+    height: 200px; 
     overflow: hidden;
     margin-top: 40px;
     margin-bottom: 10px;
     margin-left: 20%;
+    display: flex;
 }
 
 .image-container-arcgis img{
@@ -301,7 +302,7 @@ header {
     font-weight: bold;
     color: #666;
     position: absolute;
-    top: 1080px;
+    top: 1105px;
     left: 230px;
     margin: 20px;
     text-align: center;
@@ -321,7 +322,7 @@ header {
     color: #666;
     position: absolute;
     top: 1320px;
-    left: 1200px;
+    left: 1180px;
     margin: 20px;
     text-align: center;
     z-index: 99;
@@ -339,7 +340,7 @@ header {
     font-weight: bold;
     color: #666;
     position: absolute;
-    top: 1540px;
+    top: 1550px;
     left: 230px;
     margin: 20px;
     text-align: center;
