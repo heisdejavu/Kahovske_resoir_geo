@@ -940,6 +940,8 @@ th {
 /* Адаптація */
 /* Для екранів з шириною менше 768px */
 @media (max-width: 768px) {
+
+    /* Загальні стилі для header */
     .header-container {
         flex-direction: column; /* Переключаємо на вертикальне розташування */
         align-items: center; 
@@ -968,7 +970,7 @@ th {
     }
 
 
-
+    /* FOOTER */
     .footer-container nav {
         flex-direction: column; /* Розташування меню у стовпчик */
         gap: 10px;
@@ -1030,7 +1032,13 @@ th {
         font-size: 1em; /* Зменшений розмір заголовка */
     }
 
-    .image-container-arcgis, .image-container-sepal-raster, .image-container-sepal-vector, .image-container-gee-ndvi, .image-container-gee-ndwi {
+    .image-container-arcgis{
+        width: 100%;
+        height: 300px;
+        margin: 5px auto;
+    }
+
+    .image-container-sepal-raster, .image-container-sepal-vector, .image-container-gee-ndvi, .image-container-gee-ndwi {
         width: 90%; /* Займає більшу частину ширини екрана на мобільних пристроях */
         height: 300px;
         margin: 5px auto;
@@ -1104,18 +1112,29 @@ th {
 
     .gif-container-duo{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         height: auto;
         justify-content: center;
         align-items: flex-end;
         display: flex;
+        margin: 0 auto;
+    }
+
+    .image-one-duo, .image-two-duo{
+        width: 90%; /* Збільшує ширину на мобільних */
+        height: auto;
+        /* height: 300px;  */
+        overflow: hidden;
+        /* margin-left: 30px; */
+        margin-right: 5%;
     }
 
     .gif-bg-duo {
         position: relative;
         display: flex;
-        width: 100%;
-        height: 400px; 
+        width: 90%;
+        max-height: 400px; 
+        margin: 0 auto;
     }
 
     .map-description{
@@ -1131,13 +1150,14 @@ th {
     
 
     .text-overlay-maps-one, .text-overlay-maps-two {
+        display: flex;
         font-size: 0.8em; /* Зменшений шрифт на текстовому блоці */
         padding: 5px;
         opacity: 1;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        margin-left: 5%;
         min-width: 110px;
-        max-width: 420px;
+        max-width: 340px;
+        
     }
 
     .table-container{
@@ -1164,12 +1184,11 @@ th {
 
     .gee-container {
         display: flex;
+        width: 90%;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
         justify-items: center;
-        margin: -5px 0 0 0; 
-        /* height: 650px;  */
     }
 
 }
