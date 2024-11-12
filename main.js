@@ -1,6 +1,13 @@
+//HELLO GEOPORTAL ANIMATION
 window.addEventListener('scroll', () => {
-    const infoSection = document.querySelector('.info-section');
-    const triggerPoint = window.innerHeight * 0.50; // 75% of the window height
+  if (window.innerWidth <= 768) {
+    triggerPoint = window.innerHeight * 0.25; // 75% of the window height
+  } else {
+    triggerPoint = window.innerHeight * 0.50; // 75% of the window height
+  } 
+  
+  const infoSection = document.querySelector('.info-section');
+    // const triggerPoint = window.innerHeight * 0.50; // 75% of the window height
 
     if (infoSection) {
         if (window.scrollY > triggerPoint) {
@@ -9,6 +16,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
+//MAIN TEXT ANIMATION
 window.addEventListener('scroll', () => {
   const infoSection = document.querySelector('.side-text-arcgis');
   const triggerPoint = window.innerHeight * 0.75; // 75% of the window height
@@ -44,6 +53,7 @@ window.addEventListener('scroll', () => {
 });
 
 
+//IMAGE COLLECTION SLIDER
 
 let slideIndex = 1;
 showSlides(slideIndex);

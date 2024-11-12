@@ -218,7 +218,7 @@ header {
 /* Кнопка Learn More */
 .learn-more-denis {
     padding: 10px 20px;
-    background-color: transparent;
+    background-color: #e7fddf;
     border: 1px solid #666;
     color: #666;
     font-size: 1em;
@@ -228,8 +228,8 @@ header {
 }
 
 .learn-more-denis:hover {
-    background-color: #e7fddf;
-    color: black;
+    background-color: #666;
+    color: white;
 }
 
 .centered-text {
@@ -366,11 +366,12 @@ header {
     text-align: center;
     z-index: 99;
     font-size: 3em;
+
     opacity: 0.4;
     transform: translateY(50px);
     transition: opacity 0.4s ease, transform 0.4s ease; 
     visibility: hidden; 
-}
+}   
 
 .side-text-sepal{
     writing-mode: vertical-rl;
@@ -430,10 +431,9 @@ header {
 .footer-container nav {
     display: flex;
     list-style: none;
-    gap: 0px;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .footer-container nav ul {
@@ -484,8 +484,9 @@ header {
 }
 
 .created-app-name{
+    display: flex;
     margin: 5px;
-    margin-left: 333px;
+    justify-content: center;
     margin-bottom: 30px;
     margin-top: 30px;
     font-size: 1.4em;
@@ -564,14 +565,14 @@ header {
 
 .map-description p{
     text-align: justify;
-    max-width: 1300px;
+    /* max-width: 1300px; */
 }
 
 .map-description h1{
     margin: 5px;
     font-size: 1.4em;
     text-align: center;
-    max-width: 1300px;
+    /* max-width: 1300px; */
 }
 
 .created-app-name-duo{
@@ -941,13 +942,16 @@ th {
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column; /* Переключаємо на вертикальне розташування */
-        align-items: flex-start; /* Вирівнюємо текст ліворуч */
+        align-items: center; 
+        justify-content: center;
+        margin: 0 auto ;
         padding: 10px;
+        gap: 10px;
     }
     
     .header-container h1 {
         font-size: 1.2em; /* Зменшуємо розмір заголовка */
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     
     .header-container nav {
@@ -962,4 +966,210 @@ th {
         font-size: 0.9em; /* Зменшуємо розмір шрифту для пунктів меню */
         padding: 8px;
     }
+
+
+
+    .footer-container nav {
+        flex-direction: column; /* Розташування меню у стовпчик */
+        gap: 10px;
+    }
+    
+    .footer-container nav ul {
+        flex-direction: column; /* Переводить список у вертикальний вигляд */
+    }
+    
+    .footer-container nav ul li {
+        margin: 5px 0; /* Вертикальний відступ між пунктами меню */
+    }
+    
+    .footer-container a {
+        font-size: 0.9em; /* Зменшуємо розмір шрифту */
+        padding: 8px;
+    }
+
+    .footer-container p {
+        font-size: 0.8em; /* Зменшений шрифт для тексту у футері */
+    }
+
+    /* HELLO GEOPORTAL */
+    .hero-section {
+        height: auto; /* Зменшена висота на мобільних */
+        padding: 30px;
+    }
+
+    .text-overlay {
+        max-width: 90%; /* Зменшена ширина на мобільних */
+        font-size: 1em; /* Зменшений розмір шрифту */
+        padding: 10px;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.8em; /* Зменшений заголовок */
+    }
+    
+    .info-section .content h2 {
+        font-size: 1.6em; /* Зменшений розмір заголовка в info-section */
+    }
+
+    .info-section .content p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    .info-section-denis .content h2 {
+        font-size: 1.6em; /* Зменшений розмір заголовка в info-section */
+    }
+
+    .info-section-denis .content p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    /* MAPS */
+    .centered-text h2 {
+        font-size: 1em; /* Зменшений розмір заголовка */
+    }
+
+    .image-container-arcgis, .image-container-sepal-raster, .image-container-sepal-vector, .image-container-gee-ndvi, .image-container-gee-ndwi {
+        width: 90%; /* Займає більшу частину ширини екрана на мобільних пристроях */
+        height: 300px;
+        margin: 5px auto;
+    }
+
+    .text-overlay-maps {
+        font-size: 0.8em; /* Зменшений розмір шрифту для тексту на карті */
+        padding: 5px;
+        top: 250px;
+    }
+
+    .learn-more-map {
+        font-size: 0.8em; /* Зменшений розмір шрифту кнопки */
+        padding: 5px 8px;
+    }
+
+
+    /* ARCGIS PAGE */
+
+    .created-app-name h2 {
+        display: flex;
+        font-size: 1.5em; /* Зменшення розміру заголовка */
+        
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .gif-container {
+        display: flex;
+        padding: 30px;
+        max-height: 345px;
+    }
+    
+    .gif-container-arcgis {
+        width: 90%; /* Збільшує ширину на мобільних */
+        height: auto;
+    }
+
+    .text-overlay-maps-arcgis {
+        font-size: 0.8em; /* Зменшений шрифт на текстовому блоці */
+        padding: 5px;
+        opacity: 1;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        min-width: 210px;
+    }
+
+    .click-above p {
+        font-size: 0.9em; /* Зменшений шрифт */
+    }
+
+    .map-description {
+        font-size: 1em; /* Зменшений розмір тексту для опису */
+        margin: 10px;
+    }
+
+    .map-description h1 {
+        font-size: 1.2em; /* Зменшений розмір тексту заголовка */
+    }
+
+    /* SEPAL PAGE */
+
+    .created-app-name-duo{
+        display: flex;
+        font-size: 1.5em; /* Зменшення розміру заголовка */
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .gif-container-duo{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+    }
+
+    .gif-bg-duo {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 400px; 
+    }
+
+    .map-description{
+        font-size: 1em; /* Зменшений розмір тексту для опису */
+        margin: 10px;
+    }
+
+
+    .map-description h1{
+        font-size: 1.2em; /* Зменшений розмір тексту заголовка */
+    }
+
+    
+
+    .text-overlay-maps-one, .text-overlay-maps-two {
+        font-size: 0.8em; /* Зменшений шрифт на текстовому блоці */
+        padding: 5px;
+        opacity: 1;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        min-width: 110px;
+        max-width: 420px;
+    }
+
+    .table-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: auto;
+        margin: 0 auto;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .table-1, .table-2, .table-3{
+        width: 90%;
+        
+    }
+
+    .table-title{
+        font-size: 1em; /* Зменшений розмір шрифту заголовка таблиці */
+        justify-content: center;
+    }
+
+    /* GEE PAGE */
+
+    .gee-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: -5px 0 0 0; 
+        /* height: 650px;  */
+    }
+
 }
