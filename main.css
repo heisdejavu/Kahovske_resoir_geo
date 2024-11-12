@@ -157,6 +157,45 @@ header {
 }
 
 
+/* Основний блок */
+.info-section-denis {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    position: relative; 
+}
+
+.info-section-denis .content{
+    max-width: 800px; /* Max width for the text */
+    margin: 0 auto; /* Center the text */
+    text-align: center; /* Center-align the text */
+}
+
+.info-section-denis h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-section-denis p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-section-denis p-name {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
 /* Кнопка Learn More */
 .learn-more {
     padding: 10px 20px;
@@ -172,6 +211,25 @@ header {
 .learn-more:hover {
     background-color: #666;
     color: white;
+}
+
+
+
+/* Кнопка Learn More */
+.learn-more-denis {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #666;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.learn-more-denis:hover {
+    background-color: #e7fddf;
+    color: black;
 }
 
 .centered-text {
@@ -875,4 +933,33 @@ th {
     margin-top: 5px;
     text-align: justify;
     font-size: 1.3em;
+}
+
+
+/* Адаптація */
+/* Для екранів з шириною менше 768px */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Переключаємо на вертикальне розташування */
+        align-items: flex-start; /* Вирівнюємо текст ліворуч */
+        padding: 10px;
+    }
+    
+    .header-container h1 {
+        font-size: 1.2em; /* Зменшуємо розмір заголовка */
+        margin-bottom: 10px;
+    }
+    
+    .header-container nav {
+        width: 100%; /* Займає всю ширину */
+        display: flex;
+        justify-content: space-around; /* Рівномірний розподіл пунктів меню */
+        flex-wrap: wrap; /* Переходить на наступний рядок при потребі */
+        gap: 5px;
+    }
+    
+    .header-container nav a {
+        font-size: 0.9em; /* Зменшуємо розмір шрифту для пунктів меню */
+        padding: 8px;
+    }
 }
