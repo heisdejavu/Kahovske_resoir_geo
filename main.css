@@ -18,7 +18,11 @@ header {
 .header-container {
     display: flex;
     align-items: center; /* вирівнювання по вертикалі */
-    gap: 30px; /* відступ між заголовком та навігацією */
+    /* gap: 30px;  */
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #004d40;
+    
 }
 
 /* Стиль заголовка */
@@ -26,6 +30,12 @@ header {
     font-size: 1.5em;
     color: white;
     margin: 0;
+    max-width: 350px;
+    min-width: 349px;
+}
+
+.header-container a {
+    font-size: 1.1em;
 }
 
 /* Стиль для навігаційного меню */
@@ -34,11 +44,13 @@ header {
     gap: 0px; /* відступи між пунктами меню */
     margin-left: auto ;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Стиль для посилань у меню */
 .header-container nav a {
-    color: white;
+    color: rgb(211, 211, 211);
     text-decoration: none;
     padding: 10px 9px;
     font-weight: 600;
@@ -48,11 +60,51 @@ header {
 /* Виділення активного пункту меню */
 .header-container nav a.active {
     background-color: #00796b;
+    color: white;
     border-radius: 5px;
 }
 
 /* Стиль при наведенні курсору */
 .header-container nav a:hover {
+    background-color: #00695c;
+    border-radius: 5px;
+}
+
+
+/* Стиль для кнопки меню */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Стиль для навігаційного меню */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Стиль для посилань у меню */
+.nav-menu a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    padding: 10px 9px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* Виділення активного пункту меню */
+.nav-menu a.active {
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Стиль при наведенні курсору */
+.nav-menu a:hover {
     background-color: #00695c;
     border-radius: 5px;
 }
@@ -99,18 +151,18 @@ header {
 
 /* Стилі для заголовка та тексту */
 .text-overlay h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     margin: 0;
 }
 
 .text-overlay p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 10px;
     
 }
 
 .text-overlay p-name{
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-top: 10px;
     font-style: italic;
 }
@@ -143,13 +195,13 @@ header {
 }
 
 .info-section h2 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .info-section p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #666;
     line-height: 1.6;
     margin-bottom: 40px;
@@ -174,13 +226,13 @@ header {
 }
 
 .info-section-denis h2 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .info-section-denis p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -188,7 +240,7 @@ header {
 }
 
 .info-section-denis p-name {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #666;
     line-height: 1.6;
     margin-bottom: 10px;
@@ -234,18 +286,19 @@ header {
 
 .centered-text {
     text-align: center;
-    font-size: 2.5em;
     margin-bottom: 20px;
-    
 }
 
+.centered-text h2 {
+    font-size: 2.4em;
+}
 
 .learn-more-map {
     position: absolute; /* Абсолютне позиціонування */
     top: 10px; /* Відступ від верхнього краю */
     right: 10px; /* Відступ від правого краю */
     padding: 8px 12px; /* Відступи всередині кнопки */
-    background-color: #007bff; /* Колір фону кнопки */
+    background-color: #ff6d17; /* Колір фону кнопки */
     color: white; /* Колір тексту */
     border: none; /* Без рамки */
     border-radius: 5px; /* Закруглені кути */
@@ -565,6 +618,7 @@ header {
 
 .map-description p{
     text-align: justify;
+    font-size: 1.3em;
     /* max-width: 1300px; */
 }
 
@@ -576,10 +630,11 @@ header {
 }
 
 .created-app-name-duo{
+    display: flex;
     margin: 5px;
-    margin-left: 67px;
     margin-bottom: 30px;
     margin-top: 30px;
+    justify-content: center;
     font-size: 1.4em;
     color: #666;
 }
@@ -666,23 +721,21 @@ header {
     opacity: 1;
 }
 
-
+/* Для сторінки про проект: */
 .about-container {
     background-color: #f9f9f9;
+    padding: 20px;
 }
-/* Для сторінки про проект: */
+
 /* Стиль для інформаційних блоків */
 .project-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    
-    
 }
 
 .meta-info, .author-info {
     width: 45%;
-    
 }
 
 .meta-info h3, .image-gallery h3 {
@@ -694,23 +747,19 @@ header {
 }
 
 .author-info p{
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 20px;
 }
 
 .meta-info p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
-
-
 .author-info p-name{
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 2px;
     font-style: italic;
-    margin-left: 10px;
 }
 
 .author-info a{
@@ -722,15 +771,54 @@ header {
     color: #666;
 }
 
+.interest-link{
+    text-align: justify;
+    margin-left: 0px;
+}
+
+.interest-link h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2.4em;
+}
+
+.interest-link a{
+    color: black;
+    text-decoration: none;
+}
+
+.interest-link a:hover{
+    color: #666;
+}
+
+.links-my-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.links-my-page p{
+    margin-top: 9px;
+    text-align: justify;
+    font-size: 1.3em;
+}
 
 .image-header{
     margin: 5px;
     margin-bottom: 30px;
     margin-top: 30px;
-    font-size: 1.4em;
     display: flex;
     justify-content: center;
 }
+
+.image-header h2{
+    font-size: 2.4em;
+}
+
 /* Галерея зображень */
 *{
   box-sizing: border-box;
@@ -905,36 +993,6 @@ th {
     /* margin-left: -50%; */
 }
 
-.interest-link{
-    margin: 5px;
-    margin-left: 20px;
-    text-align: justify;
-    
-}
-
-.interest-link h2{
-    margin: 5px;
-    margin-left: 20px;
-    font-size: 1.8em;
-    
-}
-
-.interest-link a{
-    color: black;
-    text-decoration: none;
-}
-
-.interest-link a:hover{
-    color: #666;
-}
-
-.interest-link p{
-    margin: 5px;
-    margin-left: 20px;
-    margin-top: 5px;
-    text-align: justify;
-    font-size: 1.3em;
-}
 
 
 /* Адаптація */
@@ -946,7 +1004,7 @@ th {
         flex-direction: column; /* Переключаємо на вертикальне розташування */
         align-items: center; 
         justify-content: center;
-        margin: 0 auto ;
+        margin: 0 auto;
         padding: 10px;
         gap: 10px;
     }
@@ -954,9 +1012,11 @@ th {
     .header-container h1 {
         font-size: 1.2em; /* Зменшуємо розмір заголовка */
         margin-bottom: 5px;
+        text-align: center;
     }
     
     .header-container nav {
+        flex-direction: column;
         width: 100%; /* Займає всю ширину */
         display: flex;
         justify-content: space-around; /* Рівномірний розподіл пунктів меню */
@@ -967,6 +1027,27 @@ th {
     .header-container nav a {
         font-size: 0.9em; /* Зменшуємо розмір шрифту для пунктів меню */
         padding: 8px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid #ddd;
     }
 
 
@@ -1045,7 +1126,7 @@ th {
     }
 
     .text-overlay-maps {
-        font-size: 0.8em; /* Зменшений розмір шрифту для тексту на карті */
+        font-size: 1em; /* Зменшений розмір шрифту для тексту на карті */
         padding: 5px;
         top: 250px;
     }

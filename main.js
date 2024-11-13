@@ -1,3 +1,13 @@
+//MENU TOGGLE
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('show');
+  });
+});
+
 //HELLO GEOPORTAL ANIMATION
 window.addEventListener('scroll', () => {
   if (window.innerWidth <= 768) {
