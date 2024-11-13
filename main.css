@@ -11,18 +11,16 @@ body {
 /* Загальні стилі для header */
 header {
     background-color: #004d40; /* колір фону */
-    padding: 15px 20px;
+    padding: 5px 5px;
 }
 
 /* Flexbox контейнер для вирівнювання заголовка та навігації */
 .header-container {
     display: flex;
     align-items: center; /* вирівнювання по вертикалі */
-    /* gap: 30px;  */
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 5px 10px;
     background-color: #004d40;
-    
 }
 
 /* Стиль заголовка */
@@ -30,8 +28,7 @@ header {
     font-size: 1.5em;
     color: white;
     margin: 0;
-    max-width: 350px;
-    min-width: 349px;
+    min-width: 420px;
 }
 
 .header-container a {
@@ -41,7 +38,7 @@ header {
 /* Стиль для навігаційного меню */
 .header-container nav {
     display: flex;   
-    gap: 0px; /* відступи між пунктами меню */
+    gap: 0px;
     margin-left: auto ;
     text-align: center;
     justify-content: center;
@@ -339,18 +336,21 @@ header {
 
 .text-overlay-maps {
     position: relative;
-    top: 140px; 
-    /* bottom: 70px; */
-    /* left: 50%; */
-    z-index: 2;
+    text-decoration: none;
+    top: 138px; 
     color: white;
     text-align: left;
     max-width: auto; /* максимальна ширина текстового блоку */
     padding: 20px;
     margin: 0 0px;
-    font-size: 0.9em;
     background: rgba(0, 0, 0, 0.2);
     z-index: 99;
+}
+
+.text-overlay-maps h3{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
 }
 
 .image-container {

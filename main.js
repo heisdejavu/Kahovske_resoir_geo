@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
   if (window.innerWidth <= 768) {
     triggerPoint = window.innerHeight * 0.25; // 75% of the window height
   } else {
-    triggerPoint = window.innerHeight * 0.50; // 75% of the window height
+    triggerPoint = window.innerHeight * 0.45; // 75% of the window height
   } 
   
   const infoSection = document.querySelector('.info-section');
