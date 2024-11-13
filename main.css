@@ -321,7 +321,7 @@ header {
     font-size: 14px; /* Розмір шрифту */
     cursor: pointer; /* Зміна курсору на руку при наведенні */
     transition: background-color 0.3s; /* Плавний перехід кольору */
-    z-index: 10; /* Шар над іншими елементами */
+    z-index: 99; /* Шар над іншими елементами */
 }
 .link-more-map:hover {
     background-color: #666;
