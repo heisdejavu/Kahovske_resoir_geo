@@ -309,6 +309,24 @@ header {
     color: white;
 }
 
+.link-more-map {
+    position: absolute; /* Абсолютне позиціонування */
+    bottom: 10px; /* Відступ від нижнього краю */
+    left: 10px; /* Відступ від лівого краю */
+    padding: 8px 12px; /* Відступи всередині кнопки */
+    background-color: #0b8032; /* Колір фону кнопки */
+    color: white; /* Колір тексту */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закруглені кути */
+    font-size: 14px; /* Розмір шрифту */
+    cursor: pointer; /* Зміна курсору на руку при наведенні */
+    transition: background-color 0.3s; /* Плавний перехід кольору */
+    z-index: 10; /* Шар над іншими елементами */
+}
+.link-more-map:hover {
+    background-color: #666;
+    color: white;
+}
 
 .maps{
     background: #f9f9f9;
@@ -994,6 +1012,58 @@ th {
 }
 
 
+@media (min-width: 769px) and (max-width: 999px) {
+    /* Загальні стилі для header */
+    .header-container {
+        flex-direction: column; /* Переключаємо на вертикальне розташування */
+        align-items: center; 
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .header-container h1 {
+        font-size: 1.2em; /* Зменшуємо розмір заголовка */
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    .header-container nav {
+        flex-direction: column;
+        width: 100%; /* Займає всю ширину */
+        display: flex;
+        justify-content: space-around; /* Рівномірний розподіл пунктів меню */
+        flex-wrap: wrap; /* Переходить на наступний рядок при потребі */
+        gap: 5px;
+    }
+    
+    .header-container nav a {
+        font-size: 0.9em; /* Зменшуємо розмір шрифту для пунктів меню */
+        padding: 8px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid #ddd;
+    }
+}
 
 /* Адаптація */
 /* Для екранів з шириною менше 768px */
@@ -1133,6 +1203,11 @@ th {
 
     .learn-more-map {
         font-size: 0.8em; /* Зменшений розмір шрифту кнопки */
+        padding: 5px 8px;
+    }
+
+    .link-more-map {
+        font-size: 0.9em; /* Зменшений розмір шрифту кнопки */
         padding: 5px 8px;
     }
 
