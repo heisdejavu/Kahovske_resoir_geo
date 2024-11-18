@@ -232,16 +232,14 @@ header {
     font-size: 1.3em;
     color: #666;
     line-height: 1.6;
-    margin-bottom: 20px;
     text-align: center;
 }
 
 .info-section-denis p-name {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #666;
     line-height: 1.6;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -328,6 +326,8 @@ header {
     color: white;
 }
 
+
+
 .maps{
     background: #f9f9f9;
     padding: 20px;
@@ -342,6 +342,7 @@ header {
     margin-bottom: 10px;
     margin-left: 20%;
     display: flex;
+    border: 1px solid #666;
 }
 
 .image-container-arcgis img{
@@ -392,6 +393,7 @@ header {
     overflow: hidden;
     margin-bottom: 5px;
     margin-left: 19.9%;
+    border: 1px solid #666;
 }
 
 .image-container-sepal-vector{
@@ -402,6 +404,7 @@ header {
     margin-bottom: 5px;
     margin-left: 5px;
     /* margin-left: -50%; */
+    border: 1px solid #666;
 }
 
 .image-container-gee-ndvi{
@@ -411,6 +414,7 @@ header {
     overflow: hidden;
     margin-bottom: 40px;
     margin-left: 19.9%;
+    border: 1px solid #666;
 }
 
 .image-container-gee-ndwi{
@@ -420,6 +424,7 @@ header {
     overflow: hidden;
     margin-bottom: 40px;
     margin-left: 5px;
+    border: 1px solid #666;
 }
 
 
@@ -573,17 +578,17 @@ header {
 
 .gif-container-arcgis{
     position: relative;
-    width: 50%;
-    height: 340px; 
+    width: 70%;
+    height: 450px; 
     overflow: hidden;
     margin-bottom: 5px;
-    margin-left: 50px;
+    border: 1px solid #666;
 }
 
 .gif-bg{
     position: relative;
     width: 100%;
-    height: 340px; 
+    height: 450px;
     overflow: hidden;
     margin: 0 auto;
     object-fit: cover;
@@ -618,6 +623,7 @@ header {
 }
 
 .click-above{
+    position: relative;
     margin: 5px;
     text-align: center;
     font-size: 0.6;
@@ -626,12 +632,14 @@ header {
 
 
 .map-description{
-    margin: 10px;
-    margin-left: 90px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-right: 55px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+    padding: 30px;
     font-size: 1.2em;
+    width: 100%;
+    justify-content: center;
+
 }
 
 .map-description p{
@@ -666,7 +674,7 @@ header {
 
 .gif-bg-duo {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 400px; 
     overflow: hidden;
     margin: 0 auto;
@@ -684,20 +692,21 @@ header {
 
 .image-one-duo{
     position: relative;
-    width: 70%;
+    width: 45%;
     height: 400px; /* або налаштуйте висоту за потреби */
     overflow: hidden;
     margin-bottom: 5px;
-    margin-left: 5%;
+    border: 1px solid #666;
 }
 
 .image-two-duo{
     position: relative;
-    width: 70%;
+    width: 45%;
     height: 400px; /* або налаштуйте висоту за потреби */
     overflow: hidden;
     margin-bottom: 5px;
     margin-left: 5px;
+    border: 1px solid #666;
 }
 
 .text-overlay-maps-one {
@@ -1011,6 +1020,35 @@ th {
     /* margin-left: -50%; */
 }
 
+.graph-container-gee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 0 0; 
+    border: 1px solid #666;
+}
+
+@media (max-width: 1400px) {
+    .table-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: auto;
+        margin: 0 auto;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .table-1, .table-2, .table-3{
+        width: 90%;
+        
+    }
+
+    .table-title{
+        font-size: 1em; /* Зменшений розмір шрифту заголовка таблиці */
+        justify-content: center;
+    }
+}
 
 @media (min-width: 769px) and (max-width: 999px) {
     /* Загальні стилі для header */
@@ -1193,6 +1231,7 @@ th {
         width: 90%; /* Займає більшу частину ширини екрана на мобільних пристроях */
         height: 300px;
         margin: 5px auto;
+        
     }
 
     .text-overlay-maps {
@@ -1225,13 +1264,24 @@ th {
 
     .gif-container {
         display: flex;
-        padding: 30px;
-        max-height: 345px;
+        /* padding: 30px; */
+        max-height: 400px;
     }
     
     .gif-container-arcgis {
         width: 90%; /* Збільшує ширину на мобільних */
         height: auto;
+        margin-bottom: 5px;
+    }
+
+    .gif-bg{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-height: 450px; 
+        margin: 0 auto;
+        
     }
 
     .text-overlay-maps-arcgis {
@@ -1288,7 +1338,8 @@ th {
     .gif-bg-duo {
         position: relative;
         display: flex;
-        width: 90%;
+        width: 100%;
+        height: auto;
         max-height: 400px; 
         margin: 0 auto;
     }
