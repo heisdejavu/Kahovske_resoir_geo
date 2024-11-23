@@ -10,7 +10,10 @@ Explore the project online: [Self-Reforestation of the Kakhovka Reservoir](https
 - **Change Detection**: Image classification for 2022–2024 using Sepal.io and Google Earth Engine.
 - **Natural Reforestation Analysis**: Tracking forest growth in formerly flooded areas.
 
-##Technologies Used
+## Technologies Used
 - Frontend: HTML, CSS, JavaScript.
 - Geospatial Analysis: Google Earth Engine, Sepal.io, QGIS.
 - Data: Sentinel-2, Landast-8, Planet satellite imagery
+
+
+Developed by [Roman Sych](https://github.com/heisdejavu)
