@@ -13,7 +13,7 @@ Explore the project online: [Self-Reforestation of the Kakhovka Reservoir](https
 ## Technologies Used
 - Frontend: HTML, CSS, JavaScript.
 - Geospatial Analysis: Google Earth Engine, Sepal.io, QGIS.
-- Data: Sentinel-2, Landast-8, Planet satellite imagery
+- Data: Sentinel-2, Landast-8, Planet satellite imagery.
 
 
 Developed by [Roman Sych](https://github.com/heisdejavu)
