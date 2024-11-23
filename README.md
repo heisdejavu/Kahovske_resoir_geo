@@ -1,4 +1,4 @@
-# Self-Reforestation of the Kakhovka Reservoir
+# Self-Reforestation of the Kahovka Reservoir
 
 This project investigates the ecological and geospatial impacts of the destruction of the Kakhovka Reservoir, focusing on natural reforestation, land-use changes, and their effect on water resources and forest ecosystems.
 
