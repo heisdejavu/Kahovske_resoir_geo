@@ -63,30 +63,18 @@ def area_classify_2022():
 
 print('//////////////////////////////////////')
 print('Class Change 2022/2024')
-# print(area_per_class_change())
 area_change, percent_change,  total_area_change, df_result_change = area_per_class_change()
-# print(area_change)
-# print(percent_change)
 print(df_result_change)
 print('//////////////////////////////////////')
 
 print('//////////////////////////////////////')
 print('Area per class 2024')
-# print(area_classify_2024())
 area_2024, percent_2024,  total_area_2024, df_result_2024 = area_classify_2024()
-# print(area_2024)
-# print(percent_2024)
 print(df_result_2024)
 print('//////////////////////////////////////')
 
 print('//////////////////////////////////////')
 print('Area per class 2022')
-# print(area_classify_2022())
 area_2022, percent_2022,  total_area_2022, df_result_2022 = area_classify_2022()
-# print(area_2022)
-# print(percent_2022)
 print(df_result_2022)
 print('//////////////////////////////////////')
-
-
-
